@@ -10,9 +10,82 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+  <style>
+  .banner {
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    object-fit: cover; /* Keeps aspect ratio, crops to fill */
+  }
+    /* Navbar Brand Custom Font & Color */
+    .navbar-brand {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #3878d9;
+    }
+
+    /* Hero Section Styles */
+    header {
+      background-image: linear-gradient(to right,#3878d9, #3878d9);
+      background-size: cover;
+      color: #212529;
+    }
+
+    header h1 span {
+      color: #0d6efd; /* Bootstrap primary */
+    }
+
+    /* Hero Button */
+    header .btn-primary {
+      padding: 12px 30px;
+      font-size: 1.1rem;
+    }
+
+    /* Login Form Card */
+    .card {
+      border-radius: 10px;
+      border: none;
+    }
+
+    .card h2 {
+      color: #0d6efd;
+    }
+
+    /* Social Buttons */
+    .btn-outline-secondary {
+      width: 100px;
+    }
+
+    /* Input Focus */
+    .form-control:focus {
+      border-color: #0860e3;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+  
+</style>
+
+  </style>
 </head>
 <body>
-
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="web-development-courses.jpg" class="banner" alt="banner-1">
+    </div>
+    <div class="carousel-item">
+      <img src="website-development-banner_2.jpg" class="banner" alt="banner-2">
+    </div>
+    <div class="carousel-item">
+      <img src="web-site-development-banner_3.jpg" class="banner" alt="banner-3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
