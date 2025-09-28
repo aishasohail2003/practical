@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Web Development Courses</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('web-development-courses.jpg') no-repeat center center/cover;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      background: rgb(181, 193, 12);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-container h1 {
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    .about-container h2 {
+      font-weight: normal;
+      line-height: 1.7;
+      color: black;
+    }
+
+    .btn-custom {
+      background: rgb(61, 60, 88);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .btn-custom:hover {
+      background: white;
+      color: black;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="about-container text-center">
+      <h1>Unlock Your Future in Web Development</h1>
+
+      <h1>🔹 What You'll Learn:</h1>
+      <h2 class="text-start">
+        • HTML, CSS & JavaScript Essentials <br>
+        • Frontend Frameworks (React, Vue, Bootstrap) <br>
+        • Backend Development (Node.js, Express, PHP) <br>
+        • Full-Stack Web Development <br>
+        • Real-World Projects & Portfolio Building
+      </h2>
+
+      <h1>🔹 Why Choose Us?</h1>
+      <h2 class="text-start">
+        • Learn at your own pace, anytime, anywhere <br>
+        • Personalized mentorship and career support <br>
+        • Lifetime access to course materials <br>
+        • Certificates to showcase your skills
+      </h2>
+
+      <h1>🚀 Start Your Journey Today!</h1>
+      <a href="index.html" class="btn btn-custom mt-3">Enroll Now</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery Effect Example -->
+  <script>
+    $(document).ready(function(){
+      $(".btn-custom").click(function(){
+        alert("Redirecting you to the enrollment page!");
+      });
+    });
+    $(document).ready(function(){
+      $("#enrollBtn").click(function(){
+        window.location.href = "joinus.html"; // redirect to registration page
+      });
+    });
+  </script>
+</body>
+</html>
